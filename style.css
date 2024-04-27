@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.767);
+    min-height: 100vh;
+    color: white;
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+}
+
+
+/* l'entête de notre document*/
+header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    margin: 20px;
+}
+h1{
+    font-weight: bold;
+    font-size: 1.5rem;  
+}
+header ul{
+    list-style : none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav{
+    width: 50%;     
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+   border-bottom: 2px solid red;
+}
+
+
+/* ici on met en forme le main*/
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.people{
+    font-size: 6rem;
+    font-weight: bold;  
+}
+.start{
+    color: blue;
+    font-size: 1.5rem;    
+}
+
+.main_gauche{
+    width: 50%;
+    margin-top: 50px;
+}
+.main_droit{
+    width: 50%;
+}
+.img{  
+    width: 100%;
+    height: 550px;
+}
+
+/*pied de page*/
+footer{
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    margin: 30px 15px 0 15px;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+
+footer h1{
+    font-size: 1.5rem;
+}
+
+
+.foot_gauche p{
+    text-align: center;
+    border: 1 solid rgb(50, 50, 138);
+    border-radius: 10px;
+    background-color:rgb(50, 50, 138);
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.foot_gauche{
+    width: 25%;
+}
+.foot_droit{
+    width: 74%;
+}
+
+.div_img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.fin{
+    width: 15%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+/* ici on gere les ecran de petite taille*/
+
+@media screen and (max-width: 360px){
+
+    h1{
+        font-weight: bold;
+        font-size: 1rem;  
+    }
+    
+    nav{
+        width: 70%;     
+    }
+    
+    /*corps*/
+    main{
+        flex-direction: column;
+        margin: 5px;
+    }
+    .people{
+        font-size: 2rem;
+        font-weight: bold;  
+    }
+    .start{
+        color: blue;
+        font-size: 1rem;    
+    }
+    
+    .main_droit{
+        width: 100%;
+    }
+    .main_gauche{
+        width: 100%;
+    }
+    .img{  
+        width: 100%;
+        height: 300px;
+        margin-top: 15px;
+    }
+    /*pied*/
+
+    footer{
+        flex-direction: column;
+    }
+    footer h1{
+        font-size: 1rem;
+    }
+    
+    .foot_gauche{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .foot_droit{
+        width: 100%;
+    }
+    
+    .div_img{
+        display: flex;
+        justify-content: space-around;
+    }
+    .fin{
+        width: 70px;
+        height: 30px;
+    }
+}
